@@ -6,4 +6,6 @@
 body {
   background: #000000;
   color: #ffffff;
+  height: 100%;
+  overflow: hidden;
 }
