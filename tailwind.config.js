@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        generalsans: ['GeneralSans', 'sans-serif'],
+        zalando: ['Zalando Sans Expanded', 'sans-serif'],
         quicksand: ['Quicksand', 'sans-serif'],
+        noto: ['Noto Sans Mono', 'sans-serif'],
       },
     },
   },
