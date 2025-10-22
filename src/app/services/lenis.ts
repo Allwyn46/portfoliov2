@@ -31,4 +31,16 @@ export class LenisService {
     if (this.animationFrameId) cancelAnimationFrame(this.animationFrameId);
     this.lenis?.destroy();
   }
+
+  scrollTo(target: HTMLElement | string, offset = 0) {
+    if (!this.lenis) return;
+
+    const element = typeof target === 'string' ? document.getElementById(target) : target;
+
+    if (element) {
+      this.lenis.scrollTo(element, { offset });
+    } else {
+      console.warn(`❌ Element not found for id: ${target}`);
+    }
+  }
 }
